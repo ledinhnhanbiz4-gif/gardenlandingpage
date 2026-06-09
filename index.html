@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO Meta ===== -->
+  <title>GreenSpace — Terrarium, Thủy Sinh & Cây Xanh Để Bàn</title>
+  <meta name="description" content="GreenSpace chuyên thiết kế Terrarium, bể cá thủy sinh, cây xanh để bàn, sen đá - xương rồng, phụ kiện và Workshop trải nghiệm thiên nhiên. Không gian xanh cho cuộc sống hiện đại." />
+  <meta name="keywords" content="terrarium, bể cá thủy sinh, cây để bàn, sen đá, xương rồng, workshop terrarium, cây phong thủy" />
+  <meta name="author" content="GreenSpace" />
+  <meta name="theme-color" content="#2E7D32" />
+  <link rel="canonical" href="https://greenspace.vn/" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GreenSpace — Không gian xanh cho cuộc sống hiện đại" />
+  <meta property="og:description" content="Chuyên thiết kế Terrarium, Thủy sinh, Cây xanh để bàn và Workshop trải nghiệm thiên nhiên." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=70" />
+  <meta property="og:url" content="https://greenspace.vn/" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" href="assets/images/products/logo_1.png" />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ===== Tailwind CSS (CDN) ===== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2E7D32',
+            secondary: '#4CAF50',
+            accent: '#8BC34A',
+            lightbg: '#F5FFF5',
+            darkbg: '#0F172A',
+            textdark: '#1E293B',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- ===== Custom CSS ===== -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ===== Schema: Local Business ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GreenSpace",
+    "description": "Chuyên thiết kế Terrarium, bể cá thủy sinh, cây xanh để bàn và Workshop trải nghiệm thiên nhiên.",
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=70",
+    "@id": "https://greenspace.vn",
+    "url": "https://greenspace.vn",
+    "telephone": "+84 909 123 456",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Quách Đình Bảo, Phú Thạnh, Tân Phú",
+      "addressLocality": "TP. Hồ Chí Minh",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.7387,
+      "longitude": 106.7223
+    },
+    "openingHours": "Mo-Su 08:00-21:00",
+    "sameAs": [
+      "https://facebook.com/greenspace",
+      "https://instagram.com/greenspace",
+      "https://tiktok.com/@greenspace",
+      "https://youtube.com/@greenspace"
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-body bg-lightbg text-textdark dark:bg-darkbg dark:text-white transition-colors duration-300 antialiased">
+
+  <!-- ================= HEADER ================= -->
+  <header id="header" class="fixed top-0 left-0 w-full z-40 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 md:h-24 lg:h-28">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2 group">
+          <img src="assets/images/products/logo_1.png" alt="Min Garden logo" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto transition-transform group-hover:scale-105 block dark:hidden" />
+          <img src="assets/images/products/logo_2.png" alt="Min Garden logo" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto transition-transform group-hover:scale-105 hidden dark:block" />
+          <span class="hidden sm:inline font-heading font-extrabold text-xl md:text-2xl text-primary dark:text-accent tracking-tight">Min <span class="text-secondary">Garden</span></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-8 font-medium">
+          <li><a href="#home" class="nav-link">Trang chủ</a></li>
+          <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+          <li><a href="#team" class="nav-link">Đơn vị hợp tác</a></li>
+          <li><a href="#about" class="nav-link">Về tôi</a></li>
+          <li><a href="#workshop" class="nav-link">Workshop</a></li>
+          <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-3">
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" aria-label="Chuyển chế độ sáng/tối"
+            class="p-2 rounded-full bg-white/70 dark:bg-white/10 text-primary dark:text-accent hover:scale-110 transition-transform shadow-sm">
+            <svg id="icon-sun" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg id="icon-moon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+
+          <!-- Hamburger -->
+          <button id="menu-toggle" aria-label="Mở menu" class="lg:hidden p-2 rounded-md text-primary dark:text-accent">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Mobile Slide Menu ===== -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-72 max-w-[80%] bg-white dark:bg-slate-900 z-50 shadow-2xl translate-x-full transition-transform duration-300 lg:hidden">
+    <div class="flex items-center justify-between p-5 border-b border-gray-100 dark:border-white/10">
+      <span class="font-heading font-bold text-lg text-primary dark:text-accent">Menu</span>
+      <button id="menu-close" aria-label="Đóng menu" class="p-1 text-gray-500 dark:text-gray-300">
+        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ul class="flex flex-col p-5 gap-2 font-medium">
+      <li><a href="#home" class="mobile-link">Trang chủ</a></li>
+      <li><a href="#products" class="mobile-link">Sản phẩm</a></li>
+      <li><a href="#team" class="mobile-link">Đơn vị hợp tác</a></li>
+      <li><a href="#about" class="mobile-link">Về tôi</a></li>
+      <li><a href="#workshop" class="mobile-link">Workshop</a></li>
+      <li><a href="#contact" class="mobile-link">Liên hệ</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- ================= HERO / SLIDER ================= -->
+    <section id="home" class="relative h-[80vh] min-h-[460px] md:h-screen md:min-h-[600px] w-full overflow-hidden">
+      <div id="slider" class="absolute inset-0">
+        <!-- Slides -->
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" data-active="true">
+          <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1920&q=70" alt="Terrarium hệ sinh thái thu nhỏ trong bình kính" class="w-full h-full object-cover" loading="eager" />
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+          <img src="https://images.unsplash.com/photo-1584677626646-7c8f83690304?auto=format&fit=crop&w=1920&q=70" alt="Bể cá thủy sinh xanh mát" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=70" alt="Workshop trải nghiệm làm terrarium" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1920&q=70" alt="Cửa hàng cây xanh GreenSpace" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 text-white">
+        <span class="reveal mb-3 md:mb-4 inline-block px-3 md:px-4 py-1 md:py-1.5 rounded-full bg-accent/20 border border-accent/40 text-accent text-xs md:text-sm font-medium backdrop-blur-sm">🌱 Thương hiệu xanh từ 2018</span>
+        <h1 class="reveal font-heading font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight max-w-4xl drop-shadow-lg">
+          Không gian xanh cho<br class="hidden sm:block" /> cuộc sống hiện đại
+        </h1>
+        <p class="reveal mt-4 md:mt-6 max-w-md md:max-w-2xl text-sm md:text-lg text-gray-100/90">
+          Chuyên thiết kế Terrarium, Thủy sinh, Cây xanh để bàn và Workshop trải nghiệm thiên nhiên.
+        </p>
+        <div class="reveal mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4">
+          <a href="#products" class="btn-primary">Xem sản phẩm</a>
+          <a href="#workshop" class="btn-outline">Đăng ký Workshop</a>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button id="prev-slide" aria-label="Ảnh trước" class="slider-arrow left-4">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button id="next-slide" aria-label="Ảnh sau" class="slider-arrow right-4">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- Dots -->
+      <div id="slider-dots" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-2.5"></div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section id="products" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 md:mb-14">
+          <h2 class="reveal section-title">Danh mục sản phẩm</h2>
+          <p class="reveal section-sub">Đa dạng giải pháp xanh cho mọi không gian sống và làm việc của bạn.</p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8" id="products-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section id="team" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8 bg-white/60 dark:bg-white/5">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 md:mb-14">
+          <h2 class="reveal section-title">Đơn vị hợp tác</h2>
+          <p class="reveal section-sub">Những đối tác đồng hành cùng chúng tôi trên hành trình xanh.</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 md:gap-8" id="team-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Image -->
+        <div class="reveal relative">
+          <img src="assets/images/products/về%20tôi.jpg" alt="Chân dung nhà sáng lập Min Garden" loading="lazy"
+            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=70'"
+            class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/5] max-w-md mx-auto" />
+          <div class="absolute -bottom-6 -right-2 sm:right-6 bg-primary text-white rounded-2xl px-6 py-4 shadow-xl">
+            <p class="font-heading font-bold text-2xl">7+</p>
+            <p class="text-sm text-white/80">năm kinh nghiệm</p>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <h2 class="reveal section-title text-left">Về tôi</h2>
+          <p class="reveal section-sub text-left">
+            Xin chào, tôi là <strong class="text-primary dark:text-accent">Min Garden</strong> — được thành lập từ 2019.
+            Tôi tin rằng một mảng xanh nhỏ có thể thay đổi cả không gian sống và tinh thần của bạn.
+          </p>
+          <div class="reveal mt-6 space-y-4">
+            <div class="about-point"><span>🎯</span><div><h4>Sứ mệnh</h4><p>Mang thiên nhiên đến gần hơn với cuộc sống đô thị hiện đại.</p></div></div>
+            <div class="about-point"><span>🌏</span><div><h4>Tầm nhìn</h4><p>Trở thành thương hiệu terrarium & thủy sinh được yêu thích nhất Việt Nam.</p></div></div>
+            <div class="about-point"><span>🛠️</span><div><h4>Kinh nghiệm</h4><p>Hơn 7 năm thiết kế, setup và chăm sóc hàng nghìn tiểu cảnh xanh.</p></div></div>
+          </div>
+
+          <!-- Counters -->
+          <div class="reveal mt-10 grid grid-cols-3 gap-4 text-center">
+            <div class="counter-box"><p class="counter" data-target="1500">0</p><span>Khách hàng</span></div>
+            <div class="counter-box"><p class="counter" data-target="120">0</p><span>Workshop</span></div>
+            <div class="counter-box"><p class="counter" data-target="850">0</p><span>Dự án hoàn thành</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORKSHOP CTA ================= -->
+    <section id="workshop" class="py-12 md:py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto rounded-3xl overflow-hidden relative shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=70" alt="Không gian workshop terrarium" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-primary/80 dark:bg-primary/85"></div>
+        <div class="relative z-10 text-center text-white py-16 px-6">
+          <h2 class="reveal font-heading font-extrabold text-3xl md:text-4xl">Tham gia Workshop trải nghiệm</h2>
+          <p class="reveal mt-4 max-w-xl mx-auto text-white/90">Tự tay tạo nên tiểu cảnh xanh của riêng bạn cùng đội ngũ GreenSpace. Phù hợp cho cá nhân, nhóm bạn và team building.</p>
+          <a href="#contact" class="reveal btn-light mt-8 inline-block">Đăng ký ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT / MAP ================= -->
+    <section id="contact" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8 bg-white/60 dark:bg-white/5">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 md:mb-14">
+          <h2 class="reveal section-title">Tìm chúng tôi</h2>
+          <p class="reveal section-sub">Ghé thăm cửa hàng hoặc liên hệ để được tư vấn không gian xanh phù hợp.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 sm:gap-8 items-stretch">
+          <!-- Map -->
+          <div class="reveal rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl min-h-[260px] sm:min-h-[320px]">
+            <iframe title="Bản đồ Min Garden" loading="lazy" class="w-full h-full min-h-[260px] sm:min-h-[320px] border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.403925573692!2d106.624693775736!3d10.780343359120055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c1d1224180f%3A0xf5337bcb2ab88562!2zNTkgxJAuIFF1w6FjaCDEkMOsbmggQuG6o28sIFBow7ogVGjhuqFuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1780938951423!5m2!1svi!2s"
+              allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- Info -->
+          <div class="reveal flex flex-col justify-center gap-3 sm:gap-5 bg-white dark:bg-slate-800/60 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-xl">
+            <div class="contact-item"><span>📍</span><div><h4>Địa chỉ</h4><p>59 Quách Đình Bảo, Phú Thạnh, Tân Phú, HCM</p></div></div>
+            <div class="contact-item"><span>📞</span><div><h4>Hotline</h4><p><a href="tel:+84909123456" class="hover:text-primary dark:hover:text-accent">0386505251</a></p></div></div>
+            <div class="contact-item"><span>✉️</span><div><h4>Email</h4><p><a href="mailto:hello@greenspace.vn" class="hover:text-primary dark:hover:text-accent">hkdmingarden@gmail.com</a></p></div></div>
+            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-1 sm:mt-3">
+              <a href="https://maps.google.com/?q=123+Nguyen+Van+Linh" target="_blank" rel="noopener" class="btn-primary flex-1 text-center">Chỉ đường</a>
+              <a href="tel:+84909123456" class="btn-outline-green flex-1 text-center">Gọi ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-gray-300 pt-10 md:pt-16 pb-6 md:pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+      <!-- Col 1 -->
+      <div class="col-span-2 lg:col-span-1">
+        <a href="#home" class="flex items-center gap-2 mb-4">
+          <img src="assets/images/products/logo_2.png" alt="Min Garden logo" class="h-10 w-auto" />
+          <span class="font-heading font-extrabold text-2xl text-white">Min <span class="text-accent">Garden</span></span>
+        </a>
+        <p class="text-sm leading-relaxed text-gray-400">Mang thiên nhiên đến gần hơn với cuộc sống hiện đại qua từng tiểu cảnh terrarium, thủy sinh và cây xanh.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h4 class="footer-title">Danh mục</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#products" class="footer-link">Terrarium</a></li>
+          <li><a href="#products" class="footer-link">Thủy sinh</a></li>
+          <li><a href="#products" class="footer-link">Cây xanh</a></li>
+          <li><a href="#products" class="footer-link">Sen đá</a></li>
+          <li><a href="#workshop" class="footer-link">Workshop</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h4 class="footer-title">Liên hệ</h4>
+        <ul class="space-y-2.5 text-sm text-gray-400">
+          <li>📍 59 Quách Đình Bảo, Phú Thạnh, Tân Phú, HCM</li>
+          <li>📞 <a href="tel:+84909123456" class="footer-link">0386505251</a></li>
+          <li>✉️ <a href="mailto:hello@greenspace.vn" class="footer-link">hkdmingarden@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div>
+        <h4 class="footer-title">Mạng xã hội</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook" class="social-btn">f</a>
+          <a href="#" aria-label="TikTok" class="social-btn">t</a>
+          <a href="#" aria-label="Instagram" class="social-btn">in</a>
+          <a href="#" aria-label="YouTube" class="social-btn">yt</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 text-center text-sm text-gray-500">
+      © 2026 GreenSpace. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Lên đầu trang" class="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-primary text-white shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-secondary">
+    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
