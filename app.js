@@ -11,7 +11,7 @@ const SHOPEE_SHOP = 'https://shopee.vn/greenspace'; // 🔁 Đổi thành link s
 const PRODUCTS = [
   {
     title: 'Terrarium',
-    img: 'assets/images/products/Terrarium.jpg',
+    img: 'assets/images/products/terrarium.jpg',
     demo: 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=70',
     alt: 'Terrarium hệ sinh thái thu nhỏ',
     points: ['Hệ sinh thái thu nhỏ', 'Kính nghệ thuật', 'Nhiều kích thước'],
@@ -20,7 +20,7 @@ const PRODUCTS = [
   },
   {
     title: 'Bể cá thủy sinh',
-    img: 'assets/images/products/Bể cá thủy sinh.jpg',
+    img: 'assets/images/products/be-ca-thuy-sinh.jpg',
     demo: 'https://images.unsplash.com/photo-1584677626646-7c8f83690304?auto=format&fit=crop&w=800&q=70',
     alt: 'Bể cá thủy sinh thiết kế theo yêu cầu',
     points: ['Thiết kế theo yêu cầu', 'Setup trọn gói', 'Bảo trì định kỳ'],
@@ -29,7 +29,7 @@ const PRODUCTS = [
   },
   {
     title: 'Cây xanh để bàn',
-    img: 'assets/images/products/Cây xanh để bàn.jpg',
+    img: 'assets/images/products/cay-xanh-de-ban.jpg',
     demo: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=70',
     alt: 'Cây xanh để bàn trang trí',
     points: ['Cây phong thủy', 'Cây văn phòng', 'Chậu decor'],
@@ -38,7 +38,7 @@ const PRODUCTS = [
   },
   {
     title: 'Sen đá - Xương rồng',
-    img: 'assets/images/products/Sen đá - Xương rồng.jpg',
+    img: 'assets/images/products/sen-da-xuong-rong.jpg',
     demo: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=800&q=70',
     alt: 'Sen đá và xương rồng nhiều giống',
     points: ['Dễ chăm sóc', 'Nhiều giống đẹp', 'Phù hợp trang trí'],
@@ -47,7 +47,7 @@ const PRODUCTS = [
   },
   {
     title: 'Phụ kiện',
-    img: 'assets/images/products/Phụ kiện.jpg',
+    img: 'assets/images/products/phu-kien.jpg',
     demo: 'https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?auto=format&fit=crop&w=800&q=70',
     alt: 'Phụ kiện chậu cây và dụng cụ chăm sóc',
     points: ['Chậu cây', 'Đá trang trí', 'Dụng cụ chăm sóc'],
@@ -56,7 +56,7 @@ const PRODUCTS = [
   },
   {
     title: 'Workshop',
-    img: 'assets/images/products/Workshop.jpg',
+    img: 'assets/images/products/workshop.jpg',
     demo: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=70',
     alt: 'Workshop trải nghiệm làm terrarium',
     points: ['Trải nghiệm thực hành', 'Học làm Terrarium', 'Nhóm và cá nhân'],
