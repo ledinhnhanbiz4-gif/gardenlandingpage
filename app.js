@@ -6,7 +6,7 @@
 /* -------------------------------------------------
  * 0. DATA
  * ------------------------------------------------- */
-const SHOPEE_SHOP = 'https://shopee.vn/greenspace'; // 🔁 Đổi thành link shop Shopee thật của bạn
+const SHOPEE_SHOP = 'https://shopee.vn/min_garden'; // 🔁 Đổi thành link shop Shopee thật của bạn
 
 const PRODUCTS = [
   {
@@ -16,7 +16,7 @@ const PRODUCTS = [
     alt: 'Terrarium hệ sinh thái thu nhỏ',
     points: ['Hệ sinh thái thu nhỏ', 'Kính nghệ thuật', 'Nhiều kích thước'],
     cta: 'Xem chi tiết',
-    link: 'https://shopee.vn/greenspace#terrarium',
+    link: 'https://shopee.vn/shop/208072276?categoryId=270882397',
   },
   {
     title: 'Bể cá thủy sinh',
@@ -25,7 +25,7 @@ const PRODUCTS = [
     alt: 'Bể cá thủy sinh thiết kế theo yêu cầu',
     points: ['Thiết kế theo yêu cầu', 'Setup trọn gói', 'Bảo trì định kỳ'],
     cta: 'Xem chi tiết',
-    link: 'https://shopee.vn/greenspace#thuy-sinh',
+    link: 'https://shopee.vn/shop/208072276?categoryId=270882395',
   },
   {
     title: 'Cây xanh để bàn',
@@ -34,7 +34,7 @@ const PRODUCTS = [
     alt: 'Cây xanh để bàn trang trí',
     points: ['Cây phong thủy', 'Cây văn phòng', 'Chậu decor'],
     cta: 'Xem chi tiết',
-    link: 'https://shopee.vn/greenspace#cay-de-ban',
+    link: 'https://shopee.vn/shop/208072276?categoryId=270882393',
   },
   {
     title: 'Sen đá - Xương rồng',
@@ -43,7 +43,7 @@ const PRODUCTS = [
     alt: 'Sen đá và xương rồng nhiều giống',
     points: ['Dễ chăm sóc', 'Nhiều giống đẹp', 'Phù hợp trang trí'],
     cta: 'Xem chi tiết',
-    link: 'https://shopee.vn/greenspace#sen-da',
+    link: 'https://shopee.vn/shop/208072276?categoryId=270882392',
   },
   {
     title: 'Phụ kiện',
@@ -52,7 +52,7 @@ const PRODUCTS = [
     alt: 'Phụ kiện chậu cây và dụng cụ chăm sóc',
     points: ['Chậu cây', 'Đá trang trí', 'Dụng cụ chăm sóc'],
     cta: 'Xem chi tiết',
-    link: 'https://shopee.vn/greenspace#phu-kien',
+    link: 'https://shopee.vn/shop/208072276?categoryId=258824225',
   },
   {
     title: 'Workshop',
@@ -61,34 +61,34 @@ const PRODUCTS = [
     alt: 'Workshop trải nghiệm làm terrarium',
     points: ['Trải nghiệm thực hành', 'Học làm Terrarium', 'Nhóm và cá nhân'],
     cta: 'Đăng ký ngay',
-    link: '#contact', // Workshop vẫn dẫn tới phần liên hệ
+    link: '#contact',
   },
 ];
 
 const TEAM = [
   {
-    name: 'Minh Anh',
-    role: 'Founder & Designer',
-    desc: 'Người truyền cảm hứng và định hình phong cách xanh của GreenSpace.',
-    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=70',
+    name: 'AEON MALL',
+    role: 'Đối tác mặt bằng',
+    desc: 'Min Garden cung cấp giải pháp trang trí cây xanh & terrarium cho hệ thống AEON trên toàn quốc.',
+    img: 'assets/images/products/aeon.jpg',
   },
   {
-    name: 'Quốc Bảo',
-    role: 'Chuyên gia thủy sinh',
-    desc: 'Setup và bảo trì hàng trăm bể thủy sinh lớn nhỏ.',
-    img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=70',
+    name: 'Shinhan Bank',
+    role: 'Đối tác tài chính',
+    desc: 'Trang trí không gian xanh cho hệ thống văn phòng và chi nhánh Shinhan Bank Việt Nam.',
+    img: 'assets/images/products/shinhan.jpg',
   },
   {
-    name: 'Thu Hà',
-    role: 'Nghệ nhân Terrarium',
-    desc: 'Bàn tay khéo léo tạo nên những tiểu cảnh độc bản.',
-    img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=70',
+    name: 'Haidilao',
+    role: 'Đối tác F&B',
+    desc: 'Thiết kế và cung cấp cây xanh trang trí nội thất cho chuỗi nhà hàng lẩu cao cấp Haidilao.',
+    img: 'assets/images/products/haidilao.jpg',
   },
   {
-    name: 'Hoàng Long',
-    role: 'Workshop Lead',
-    desc: 'Người đồng hành trong mọi buổi workshop trải nghiệm.',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=70',
+    name: 'Booking.com',
+    role: 'Đối tác Hospitality',
+    desc: 'Hợp tác trang trí không gian xanh cho các khách sạn & homestay trên nền tảng Booking.com.',
+    img: 'assets/images/products/booking.jpg',
   },
 ];
 
@@ -228,18 +228,64 @@ const TEAM = [
 
 /* -------------------------------------------------
  * 5. RENDER PRODUCTS
+/* -------------------------------------------------
+ * 5. RENDER PRODUCTS
  * ------------------------------------------------- */
+
+/**
+ * Mở link Shopee:
+ * - Desktop: mở tab mới bình thường
+ * - iOS Safari: mở tab web trước, đồng thời thử URI scheme để bật app
+ *   (Safari chặn window.open() trong setTimeout nên không dùng async fallback)
+ * - Android: dùng intent:// với browser_fallback_url
+ */
+function openShopee(webUrl) {
+  if (!webUrl.startsWith('http')) {
+    // Link nội bộ (#contact) — không xử lý ở đây
+    return;
+  }
+
+  const ua        = navigator.userAgent;
+  const isIOS     = /iPhone|iPad|iPod/i.test(ua);
+  const isAndroid = /Android/i.test(ua);
+  const isMobile  = isIOS || isAndroid;
+  const shopUrl   = 'https://shopee.vn/min_garden';
+
+  if (!isMobile) {
+    // Desktop: mở tab mới bình thường
+    window.open(webUrl, '_blank', 'noopener,noreferrer');
+    return;
+  }
+
+  if (isAndroid) {
+    // Android: intent:// tự fallback về web nếu app không cài
+    const intent = `intent://min_garden#Intent;scheme=shopee;package=com.shopee.vn;S.browser_fallback_url=${encodeURIComponent(shopUrl)};end`;
+    window.location.href = intent;
+    return;
+  }
+
+  if (isIOS) {
+    // iOS Safari: mở web tab ngay lập tức (trong event handler = được phép),
+    // sau đó thử mở app — nếu app có, Safari sẽ chuyển sang app
+    window.open(shopUrl, '_blank', 'noopener,noreferrer');
+    // Thử URI scheme để kéo app lên (không block vì không dùng setTimeout)
+    window.location.href = 'shopee://min_garden';
+  }
+}
+
 (function renderProducts() {
   const grid = document.getElementById('products-grid');
   if (!grid) return;
 
   grid.innerHTML = PRODUCTS.map((p) => {
     const isExternal = p.link.startsWith('http');
-    const attrs = isExternal ? 'target="_blank" rel="noopener"' : '';
+    // Với link ngoài dùng onclick openShopee, với link nội bộ (#contact) dùng href bình thường
+    const hrefAttr  = isExternal ? 'href="#"' : `href="${p.link}"`;
+    const clickAttr = isExternal ? `onclick="event.preventDefault();openShopee('${p.link}')"` : '';
     const imgSrc = encodeURI(p.img);
     return `
     <article class="card reveal flex flex-col">
-      <a href="${p.link}" ${attrs} class="card-img-wrap aspect-[4/3] block" aria-label="${p.title}">
+      <a ${hrefAttr} ${clickAttr} class="card-img-wrap aspect-[4/3] block" aria-label="${p.title}">
         <img src="${imgSrc}" alt="${p.alt}" loading="lazy"
              onerror="this.onerror=null;this.src='${p.demo}'"
              class="card-img w-full h-full object-cover" />
@@ -252,7 +298,7 @@ const TEAM = [
               <span class="text-secondary">✓</span> ${pt}
             </li>`).join('')}
         </ul>
-        <a href="${p.link}" ${attrs} class="inline-flex items-center gap-1.5 text-sm sm:text-base font-semibold text-primary dark:text-accent hover:gap-3 transition-all">
+        <a ${hrefAttr} ${clickAttr} class="inline-flex items-center gap-1.5 text-sm sm:text-base font-semibold text-primary dark:text-accent hover:gap-3 transition-all">
           ${p.cta}
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
@@ -270,18 +316,14 @@ const TEAM = [
 
   grid.innerHTML = TEAM.map((m) => `
     <article class="card reveal text-center p-4 sm:p-6">
-      <div class="card-img-wrap w-20 h-20 sm:w-28 sm:h-28 mx-auto rounded-full mb-3 sm:mb-4 ring-4 ring-accent/30">
-        <img src="${m.img}" alt="Ảnh ${m.name}" loading="lazy"
-             class="card-img w-full h-full object-cover rounded-full" />
+      <div class="card-img-wrap w-full h-24 sm:h-32 mx-auto mb-3 sm:mb-4 rounded-xl overflow-hidden bg-gray-50 dark:bg-slate-700 flex items-center justify-center p-3">
+        <img src="${m.img}" alt="Logo ${m.name}" loading="lazy"
+             onerror="this.onerror=null;this.src='https://placehold.co/300x120/e2e8f0/94a3b8?text=${encodeURIComponent(m.name)}'"
+             class="card-img w-full h-full object-contain" />
       </div>
       <h3 class="font-heading font-bold text-base sm:text-lg text-textdark dark:text-white">${m.name}</h3>
       <p class="text-secondary font-medium text-xs sm:text-sm mb-2">${m.role}</p>
-      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-3 sm:mb-4">${m.desc}</p>
-      <div class="flex justify-center gap-2 sm:gap-3 text-sm">
-        <a href="#" aria-label="Facebook của ${m.name}" class="social-mini">f</a>
-        <a href="#" aria-label="Instagram của ${m.name}" class="social-mini">ig</a>
-        <a href="#" aria-label="Zalo của ${m.name}" class="social-mini">Z</a>
-      </div>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">${m.desc}</p>
     </article>
   `).join('');
 

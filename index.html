@@ -27,7 +27,7 @@
   <!-- ===== Fonts ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- ===== Tailwind CSS (CDN) ===== -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,8 +45,8 @@
             textdark: '#1E293B',
           },
           fontFamily: {
-            heading: ['Poppins', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
+            heading: ['Be Vietnam Pro', 'sans-serif'],
+            body: ['Be Vietnam Pro', 'sans-serif'],
           },
         },
       },
@@ -99,8 +99,10 @@
 
         <!-- Logo -->
         <a href="#home" class="flex items-center gap-2 group">
-          <img src="assets/images/products/logo_1.png" alt="Min Garden logo" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto transition-transform group-hover:scale-105 block dark:hidden" />
-          <img src="assets/images/products/logo_2.png" alt="Min Garden logo" class="h-12 sm:h-14 md:h-16 lg:h-20 w-auto transition-transform group-hover:scale-105 hidden dark:block" />
+          <!-- Mobile (< sm): chỉ hiện tên chữ -->
+          <span class="sm:hidden font-heading font-extrabold text-xl text-primary dark:text-accent tracking-tight">Min <span class="text-secondary">Garden</span></span>
+          <!-- Tablet / Desktop (>= sm): hiện logo + tên -->
+          <img src="assets/images/products/logo.png" alt="Min Garden logo" class="logo-light hidden sm:block h-14 md:h-16 lg:h-20 w-auto transition-transform group-hover:scale-105" />
           <span class="hidden sm:inline font-heading font-extrabold text-xl md:text-2xl text-primary dark:text-accent tracking-tight">Min <span class="text-secondary">Garden</span></span>
         </a>
 
@@ -200,6 +202,28 @@
       <div id="slider-dots" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-2.5"></div>
     </section>
 
+    <!-- ================= SOCIAL BAR ================= -->
+    <div class="py-10 md:py-14 px-4 sm:px-6 lg:px-8 bg-white/80 dark:bg-slate-800/60 border-b border-gray-100 dark:border-white/10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="reveal section-title mb-2">Liên hệ đặt hàng</h2>
+        <p class="reveal section-sub mb-8">Kết nối với chúng tôi qua các kênh dưới đây để được tư vấn và đặt hàng nhanh nhất.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="https://www.facebook.com/share/1CsHAKozYD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-bar-btn">
+            <img src="assets/images/products/facebook.png" alt="Facebook" class="w-10 h-10 object-contain" />
+          </a>
+          <a href="https://www.tiktok.com/@mingarden_conangmecay?_r=1&_t=ZS-95QTR5yVfbI" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-bar-btn">
+            <img src="assets/images/products/tiktok.png" alt="TikTok" class="w-10 h-10 object-contain" />
+          </a>
+          <a href="https://zalo.me/s/2332738582622777725/" target="_blank" rel="noopener noreferrer" aria-label="Zalo" class="social-bar-btn">
+            <img src="assets/images/products/zalo.png" alt="Zalo" class="w-10 h-10 object-contain" />
+          </a>
+          <a href="https://shopee.vn/min_garden" target="_blank" rel="noopener noreferrer" aria-label="Shopee" class="social-bar-btn">
+            <img src="assets/images/products/shopee.png" alt="Shopee" class="w-10 h-10 object-contain" />
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- ================= PRODUCTS ================= -->
     <section id="products" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
@@ -277,7 +301,7 @@
     <section id="contact" class="py-12 md:py-28 px-4 sm:px-6 lg:px-8 bg-white/60 dark:bg-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-2xl mx-auto mb-8 md:mb-14">
-          <h2 class="reveal section-title">Tìm chúng tôi</h2>
+          <h2 class="reveal section-title">Liên hệ chúng tôi</h2>
           <p class="reveal section-sub">Ghé thăm cửa hàng hoặc liên hệ để được tư vấn không gian xanh phù hợp.</p>
         </div>
 
@@ -305,53 +329,80 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-slate-900 text-gray-300 pt-10 md:pt-16 pb-6 md:pb-8 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
-      <!-- Col 1 -->
-      <div class="col-span-2 lg:col-span-1">
-        <a href="#home" class="flex items-center gap-2 mb-4">
-          <img src="assets/images/products/logo_2.png" alt="Min Garden logo" class="h-10 w-auto" />
-          <span class="font-heading font-extrabold text-2xl text-white">Min <span class="text-accent">Garden</span></span>
-        </a>
-        <p class="text-sm leading-relaxed text-gray-400">Mang thiên nhiên đến gần hơn với cuộc sống hiện đại qua từng tiểu cảnh terrarium, thủy sinh và cây xanh.</p>
-      </div>
+  <footer class="bg-slate-900 text-gray-300 pt-12 md:pt-16 pb-6 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
 
-      <!-- Col 2 -->
-      <div>
-        <h4 class="footer-title">Danh mục</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href="#products" class="footer-link">Terrarium</a></li>
-          <li><a href="#products" class="footer-link">Thủy sinh</a></li>
-          <li><a href="#products" class="footer-link">Cây xanh</a></li>
-          <li><a href="#products" class="footer-link">Sen đá</a></li>
-          <li><a href="#workshop" class="footer-link">Workshop</a></li>
-        </ul>
-      </div>
+      <!-- Top grid: mobile 2 col, desktop 3 col -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 pb-10 border-b border-white/10">
 
-      <!-- Col 3 -->
-      <div>
-        <h4 class="footer-title">Liên hệ</h4>
-        <ul class="space-y-2.5 text-sm text-gray-400">
-          <li>📍 59 Quách Đình Bảo, Phú Thạnh, Tân Phú, HCM</li>
-          <li>📞 <a href="tel:+84909123456" class="footer-link">0386505251</a></li>
-          <li>✉️ <a href="mailto:hello@greenspace.vn" class="footer-link">hkdmingarden@gmail.com</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4 -->
-      <div>
-        <h4 class="footer-title">Mạng xã hội</h4>
-        <div class="flex gap-3">
-          <a href="#" aria-label="Facebook" class="social-btn">f</a>
-          <a href="#" aria-label="TikTok" class="social-btn">t</a>
-          <a href="#" aria-label="Instagram" class="social-btn">in</a>
-          <a href="#" aria-label="YouTube" class="social-btn">yt</a>
+        <!-- Col 1: Brand — full width trên mobile -->
+        <div class="col-span-2 md:col-span-1">
+          <a href="#home" class="flex items-center gap-2 mb-4">
+            <img src="assets/images/products/logo.png" alt="Min Garden logo" class="h-10 w-auto" />
+            <span class="font-heading font-extrabold text-xl text-white">Min <span class="text-accent">Garden</span></span>
+          </a>
+          <p class="text-sm leading-relaxed text-gray-400 mb-5">Mang thiên nhiên đến gần hơn với cuộc sống hiện đại qua từng tiểu cảnh terrarium, thủy sinh và cây xanh.</p>
+          <!-- Social icons -->
+          <div class="flex gap-2 flex-wrap">
+            <a href="https://www.facebook.com/share/1CsHAKozYD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn">
+              <img src="assets/images/products/facebook.png" alt="Facebook" class="w-5 h-5 object-contain" />
+            </a>
+            <a href="https://www.tiktok.com/@mingarden_conangmecay?_r=1&_t=ZS-95QTR5yVfbI" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-btn">
+              <img src="assets/images/products/tiktok.png" alt="TikTok" class="w-5 h-5 object-contain" />
+            </a>
+            <a href="https://zalo.me/s/2332738582622777725/" target="_blank" rel="noopener noreferrer" aria-label="Zalo" class="social-btn">
+              <img src="assets/images/products/zalo.png" alt="Zalo" class="w-5 h-5 object-contain" />
+            </a>
+            <a href="https://shopee.vn/min_garden" target="_blank" rel="noopener noreferrer" aria-label="Shopee" class="social-btn">
+              <img src="assets/images/products/shopee.png" alt="Shopee" class="w-5 h-5 object-contain" />
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 text-center text-sm text-gray-500">
-      © 2026 GreenSpace. All Rights Reserved.
+        <!-- Col 2: Danh mục -->
+        <div>
+          <h4 class="footer-title">Danh mục</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#products" class="footer-link">Terrarium</a></li>
+            <li><a href="#products" class="footer-link">Thủy sinh</a></li>
+            <li><a href="#products" class="footer-link">Cây xanh</a></li>
+            <li><a href="#products" class="footer-link">Sen đá</a></li>
+            <li><a href="#products" class="footer-link">Phụ kiện</a></li>
+            <li><a href="#workshop" class="footer-link">Workshop</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Liên hệ -->
+        <div>
+          <h4 class="footer-title">Liên hệ</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex gap-2">
+              <span class="shrink-0">📍</span>
+              <span>59 Quách Đình Bảo, Phú Thạnh, Tân Phú, HCM</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="shrink-0">📞</span>
+              <a href="tel:+84386505251" class="footer-link">0386 505 251</a>
+            </li>
+            <li class="flex gap-2">
+              <span class="shrink-0">✉️</span>
+              <a href="mailto:hkdmingarden@gmail.com" class="footer-link break-all">hkdmingarden@gmail.com</a>
+            </li>
+            <li class="flex gap-2">
+              <span class="shrink-0">🕐</span>
+              <span>Thứ 2 – Chủ nhật: 8:00 – 21:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+        <p>© 2026 <span class="text-accent font-semibold">Min Garden</span>. All Rights Reserved.</p>
+        <p>Thiết kế bởi <span class="text-gray-400">Min Garden Team</span></p>
+      </div>
+
     </div>
   </footer>
 
